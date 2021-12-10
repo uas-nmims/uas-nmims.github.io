@@ -1,44 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="styles/navbar_styles.css" />
-   <title>Document</title>
- </head>
- <body>
-   <!-- Sticky header -->
-<header class="header-outer">
-  <div class="header-inner responsive-wrapper">
-    <div class="header-logo">
-      <img src="images/logo.png" />
-    </div>
-    <nav class="header-navigation">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-      <button>Menu</button>
-    </nav>
-  </div>
-</header>
-<!-- Content -->
-<main class="main">
-  <div class="main-content responsive-wrapper">
-    <article class="widget">
-      <h2>How does it work without JS? 🤯</h2>
-      <p>This sticky header consists of two elements: an <strong>outer</strong> and an <strong>inner</strong> container. The outer container is taller than the inner — and the inner is centered vertically.
-      <p>By utilizing the <code>position: sticky</code> property <strong>twice</strong>, both on the header's <strong>outer container</strong> and <strong>inner container</strong> the outer container will stick to the <code>body</code>, while the inner container will stick to the outer container.</p>
-      <p>Note that the outer container has a negative <code>top</code> value equal to the height difference between the two containers. This causes the outer container to stick <strong>above</strong> the <code>body</code>, making the inner container stick to the "ceiling" on scroll.
-      <p></p>
-    </article>
-  </div>
-  
-</main>
-   <p>
+<head>
+  <title>Css Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/navbar_styles.css">
+</head>
+<body>
 
-    
-   </p>
- </body>
+
+ <header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+           <div class="logo">
+             <a href="#">logo</a>
+           </div>
+           <input type="checkbox" id="nav-check">
+           <label for="nav-check" class="nav-toggler">
+              <span></span>
+           </label>
+           <nav class="nav">
+              <ul>
+                 <li><a href="#" class="active">home</a></li>
+                 <li><a href="#">about</a></li>
+                 <li><a href="#">services</a></li>
+                 <li><a href="#">portfolio</a></li>
+                 <li><a href="#">testimonials</a></li>
+                 <li><a href="#">contact</a></li>
+              </ul>
+           </nav>
+        </div>
+    </div>
+ </header>
+
+</body>
 </html>
