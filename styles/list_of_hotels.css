@@ -1296,5 +1296,9 @@ img {
 
 .map{
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.hotels-your-way{
+  padding: 20px;
 }
