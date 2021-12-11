@@ -1275,3 +1275,19 @@ img {
   margin-top: 35px;
   text-align: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .col-1 h2{
+    font-size:37px ;
+  }
+  .col-1 h3{
+    font-size: 30px;
+  }
+  .col-2 img{
+    display: none;
+  }
+  .body-part{
+    padding: 0%;
+  }
+}
